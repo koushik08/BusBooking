@@ -1,32 +1,53 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Confirmation Page</title>
-    <style>
-    form{
-      display:block;
-      width:5%;
-    }
-    </style>
-  </head>
-  <body>
-        <h1>Enter your details here and book a ride now!!</h1>
+
+ <!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+        <h1>Enter your details here!!</h1>
         <form action="/valid" method="post">
           <label for 'Name'>Name</label>
           <input type='text' id='Name' name='Name'>
-          <label for 'BUS_Number'>BUS_Number</label>
+          <br>
+
+          <label for 'BUS_Number'>Bus Number</label>
           <input type='text' id='BUS_Number' name='BUS_Number'>
+          <br>
+
           <label for 'NoOfTickets'>No Of Tickets</label>
-          <input type='number' id='No Of Tickets' name='NoOfTickets'>
+          <input type='text' id='No Of Tickets' name='NoOfTickets'>
+          <br>
+
           <label for 'Email'>Email</label>
           <input type='email' id='Email' name='Email'>
+          <br>
+          
           <label for 'gender'>Gender:</label>
-          <label for 'Male'>Male<label>
-          <input type='radio' id='Male' name='gender' value='Male'>
-          <label for 'Female'>Female<label>
-          <input type='radio' id='Female' name='gender' value='Female'><br>
+          <input type='text' id='gender' name='gender'>
+          <br>
           <input type='submit' value='Confirm!'>
         </form>
-  </body>
+      </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

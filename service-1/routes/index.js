@@ -7,6 +7,8 @@ const { json } = require('express');
 const APIURL = 'http://localhost:3001/availablebuses';
 var c=0;
 /* GET home page. */
+
+// app.use(express.static(__dirname + '/assets'));
 router.get('/', function(req, res, next) {
     res.sendFile(__dirname + "/" + "index.html");
 });
@@ -28,6 +30,7 @@ router.get('/availablebuses',function(req,res,next){
 router.get('/confirm',function(req,res,next){
   res.sendFile(__dirname+"/"+"confirm.html");
 });
+
 router.post('/valid',urlencodedParser,function(req,res){
         res.send("You have Booked Successfully");
 });
