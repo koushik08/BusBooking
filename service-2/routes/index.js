@@ -8,9 +8,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Go to /availablebuses to check the available buses' });
 });
 
-router.get('/availablebuses', function(req, res, next) {
-                res.send("These are the available Buses :<br/>Bus no 1:keshav Bus non-A/c <br/>Bus no 2:keshav travels ultra delux  <br/>Bus no 3:yamini travels A/c  <br/>Bus no 4:subham travels delux ");
+// router.get('/availablebuses', function(req, res, next) {
+//                 res.send("These are the available Buses :<br/>Bus no 1:keshav Bus non-A/c <br/>Bus no 2:keshav travels ultra delux  <br/>Bus no 3:yamini travels A/c  <br/>Bus no 4:subham travels delux ");
                
+// });
+
+router.get('/availablebuses', function(req, res, next) {
+  res.sendFile(__dirname + "/" + "available.html");
 });
+
 
 module.exports = router;
